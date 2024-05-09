@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Drogueria Especial Ferias</title>
+    <!--
+        se debe agregar 'type/tex' tipo de archivo texto 
+        ./= ruta de carpeta 
+    -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/Menu.css">
+</head>
+<body>
+     <!--inicio el menu de la pagina -->
+
+     <nav>
+        <ul class="menu"> 
+            <li class="logo"> 
+                <a href="1 Index.html">
+                    <img src="./img/Logoy.jpg">
+                </a>
+            </li>
+            <li>
+                <a href="./1 Index.html">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="2 Productos.html">
+                    Productos
+                </a>
+            </li>
+            <li>
+               <a href="3 Contactenos.html">
+                   Contactenos
+               </a>
+            </li>
+        </ul>
+       
+    </nav>
+     <!--Fin De menu de la pagina-->
+
+
+
+    <form >
+        <h1> SUMA </h1>
+
+        <label for=""> Numero 1</label>
+        <input type="number" name="number1" id="number1">
+        <label for=""> Numero 2</label>
+        <input type="number" name="number2" id="number2">
+        <label for=""> = </label>
+        <input type="number" name="resultado" id="resultado" disabled>
+        <input type="button" value="calcular" onclick="calcular()">
+
+    </form> 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4971662261896!2d-74.08740632511885!3d4.683309995291641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b19137848f5%3A0xf0f9c8b9074a1fce!2sDrogueria%20Especial%20Ferias!5e0!3m2!1ses!2sco!4v1712886858347!5m2!1ses!2sco" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <footer class="Inso">
+        <p> Un producto de: <img src="./Img/INSO.png">  producciones </p>
+    </footer>
+
+    <script>
+        function calcular() {
+            var number1, number2, resultado
+
+            number1 = document.getElementById("number1").value
+            number2 = document.getElementById("number2").value
+
+            resultado = Number(number1) * Number(number2)
+            document.getElementById("resultado").value = resultado
+          
+        }
+    </script>
+    
+</body>
+</html>
